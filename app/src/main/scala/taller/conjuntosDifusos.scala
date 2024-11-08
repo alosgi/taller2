@@ -34,4 +34,14 @@ class ConjuntosDifusos {
         auxUnion
     }
 
+    
+    def Igualdad(cd1: ConjuntoDifuso, cd2: ConjuntoDifuso): Boolean = {
+        def AuxIgualdad(x: Int): Boolean = {
+            if (x>1000) true 
+            else if (cd1(x) != cd2(x)) false
+            else AuxIgualdad(x+1)
+        }
+        AuxIgualdad(0)
+    }
+
 }
