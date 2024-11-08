@@ -27,4 +27,11 @@ class ConjuntosDifusos {
         mma
     }
 
+    def Union(cd1: ConjuntoDifuso, cd2: ConjuntoDifuso): ConjuntoDifuso = {
+        def auxUnion(x: Int): Double = {
+            math.max(cd1(x), cd2(x))
+        }
+        auxUnion
+    }
+
 }
