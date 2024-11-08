@@ -10,4 +10,8 @@ class ConjuntosDifusos {
         def apply(f: Int => Double): ConjuntoDifuso = f
     }
 
+    def Pertenece(elemen : Int, s: ConjuntoDifuso): Double = {
+        s(elemen)
+    }
+
 }
